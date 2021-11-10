@@ -945,6 +945,7 @@ a{
     }
     .sm-phone{
         margin: 0 !important;
+        padding: 0 !important;
     }
     .all{
         border-radius: 0;
@@ -992,6 +993,33 @@ a{
     }
     .navbar{
         margin-bottom: 30px;
+    }
+    .item-sec-1 h1 {
+        font-size: 50px !important;
+    }
+}
+@media (max-width: 414px){
+    .port.one {
+        top: 20px;
+    }
+    .port.tow {
+        left: 19px;
+    }
+    .port.three {
+        left: -22px;
+        top: -12px;
+    }
+    .port.five {
+        top: -47px;
+        left: 51px;
+    }
+    .port.sex {
+        top: 25px;
+        left: -126px;
+    }
+    .port.four {
+        top: 130px;
+        left: 20px;
     }
 }
 @media (min-width: 768px){
