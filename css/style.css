@@ -964,9 +964,10 @@ a{
     }
     .folio{
         margin-top: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
     .port.five {
-        position: relative;
         top: 58px;
         left: 5px;
     }
@@ -975,9 +976,22 @@ a{
         left: -172px;
     }
     .port.four {
-        position: relative;
-        top: 236px;
-        left: -131px;
+        top: 130px;
+        left: 183px;
+    }
+    .myimg-1{
+        width: 370px;
+        height: 370px;
+    }
+    .myimg-2{
+        width: 360px;
+        height: 360px;
+    }
+    .item-sec-1{
+        margin-top: 50px;
+    }
+    .navbar{
+        margin-bottom: 30px;
     }
 }
 @media (min-width: 768px){
