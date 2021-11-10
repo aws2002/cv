@@ -313,7 +313,7 @@ a{
     left: 0;
     height: 100%;
     width: 100%;
-    background:var(--main-color);
+    background:rgba(255, 255, 255, 0.356);
     z-index: -1;
     clip-path: circle(30% at 0 0);
     opacity: .1;
@@ -959,14 +959,13 @@ a{
         margin-top: 110px;
     }
     .navbar{
-        
         position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-    background-color: #212122;
-    }
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        background-color: #212122;
+}
     .services-responsive-mobile{
         margin-top: 150px !important;
     }
@@ -1005,7 +1004,7 @@ a{
         margin-top: 50px;
     }
     .navbar{
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
     .item-sec-1 h1 {
         font-size: 50px !important;
@@ -1017,7 +1016,7 @@ a{
         left: 191px;
     }
 } */
-@media (max-width: 414px){
+@media (max-width: 415px){
     .item-sec-1 h1 {
         font-size: 50px !important;
     }
@@ -1045,7 +1044,7 @@ a{
         left: 20px !important;
     }
     .menu-btn {
-        margin: 0px 35px;
+        margin: 0px 40px;
     }
     
 }
