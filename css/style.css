@@ -98,7 +98,7 @@ a{
 .text{
     font-size: 17px;
     color:var(--color-2) ;
-    font-weight: 300;
+    font-weight: 500;
     margin-bottom: 5px;
     font-family: var(--font-1);
 }
@@ -638,7 +638,7 @@ a{
     }
 }
 #php{
-    animation: php-fill 3s forwards;
+    animation: php-fill 3s forwards ;
 }
 @keyframes php-fill{
     100%{
@@ -761,7 +761,9 @@ a{
 .super-resume-item{
    height: 200px;
    width: 100%;
-   
+}
+.nav-brand-span{
+    animation: text-animation 10s linear infinite;
 }
 .super-resume-item h1{
     padding:60px 0 0 0;
@@ -955,6 +957,7 @@ a{
     .item-icon-socal{
         text-align: center;
     }
+    .super-resume,
     .sec-1{
         margin-top: 110px;
     }
