@@ -999,7 +999,7 @@ a{
         font-size: 50px !important;
     }
 }
-@media (max-width: 414px){
+@media (min-width: 414px){
     .item-sec-1 h1 {
         font-size: 50px !important;
     }
