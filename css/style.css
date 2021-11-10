@@ -328,6 +328,7 @@ a{
     align-items: center;
     justify-content: center;
 }
+
 .services-responsive-mobile .box h3,
 .services .box h3{
     color: var(--color-3);
@@ -640,9 +641,11 @@ a{
 #php{
     animation: php-fill 3s forwards ;
 }
+
 @keyframes php-fill{
     100%{
         width: 50%;
+        
     }
     
     40%{
@@ -939,6 +942,9 @@ a{
 
 
 @media (max-width: 767px){
+    .footer{
+        border-radius: 0;
+    }
     .services{
         display: none;
     }
@@ -1056,4 +1062,51 @@ a{
         display: none;
     }
     
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+    
+}
+::-webkit-scrollbar-track {
+    width: 13px;
+    border-left: 0 solid white;
+    border-right: 0 solid white;
+    transition: all 0.5s ease;
+    
+}
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    width: 0;
+    height: 35%;
+    transform: 0.5s ease;
+    
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #161616;
+    
+}
+
+
+.services-responsive-mobile .owl-carousel .owl-dots{
+    margin-top: 10px;
+    text-align: center;
+    margin-top: 25px;
+}
+.services-responsive-mobile .owl-carousel button.owl-dot{
+    height:6px ;
+    width: 25px;
+    background: #323233;
+    display: inline-block;
+    margin: 0 4px;
+    
+}
+.services-responsive-mobile .owl-carousel button.owl-dot.active{
+    background: var(--color-3);
+    width: 40px;
+    transition: all 0.5s ease;
+    box-shadow: 0 0 5px #007ced;
+}
+.services-responsive-mobile .owl-carousel button.owl-dot.active:hover{
+    opacity: 0.8;
 }

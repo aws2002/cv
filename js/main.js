@@ -23,20 +23,30 @@ const sr3 = ScrollReveal({
     reset: true
 });
 
-sr3.reveal(`.sec-3`, {
+sr3.reveal(`.sec-3,.box-exp,.item-box-contact,.info-icon`, {
     interval: 200
 })
-// const sr2 = ScrollReveal({
-//     origin: 'top',
-//     distance: '30px',
-//     duration: 2000,
-//     reset: true
-// });
+const sr2 = ScrollReveal({
+    origin: 'top',
+    distance: '30px',
+    duration: 2000,
+    reset: true
+});
 
-// sr2.reveal(`.box,.box-pricing`, {
-//     interval: 200
-// })
+sr2.reveal(`.box1,.box-pricing`, {
+    interval: 200
+})
 
+const sr4 = ScrollReveal({
+    origin: 'bottom',
+    distance: '30px',
+    duration: 2000,
+    reset: true
+});
+
+sr4.reveal(`.box-certificates,.titel,.item-skille,.input-form,.box-text-area,.btnForm`, {
+    interval: 200
+})
 
 
 
@@ -169,3 +179,4 @@ menuBtn.addEventListener('click',()=>{
 $(window).on("load",function(){
     $(".preloader").fadeOut("slow");
 });
+
