@@ -1022,27 +1022,27 @@ a{
         font-size: 50px !important;
     }
     .port.one {
-        top: 20px;
-        left: 50px;
+        top: 20px !important;
+        left: 50px !important;
     }
     .port.tow {
-        left: 19px;
+        left: 19px !important;
     }
     .port.three {
-        left: -22px;
-        top: -12px;
+        left: -22px !important;
+        top: -12px !important;
     }
     .port.five {
-        top: -47px;
-        left: 51px;
+        top: -47px !important;
+        left: 51px !important;
     }
     .port.sex {
-        top: 25px;
-        left: -126px;
+        top: 25px !important;
+        left: -126px !important;
     }
     .port.four {
-        top: 130px;
-        left: 20px;
+        top: 130px !important;
+        left: 20px !important;
     }
     .menu-btn {
         margin: 0px 35px;
