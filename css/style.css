@@ -982,8 +982,8 @@ a{
         padding-right: 40px;
     }
     .port.five {
-        top: 58px !important;
-        left: 5px !important;
+        top: 58px;
+        left: 5px ;
     }
     .port.sex {
         top: 130px;
@@ -1011,7 +1011,13 @@ a{
         font-size: 50px !important;
     }
 }
-@media (max-width: 413px)and(min-width:767px){
+/* @media (min-width: 1030px){
+    .port.sex {
+        top: 60px;
+        left: 191px;
+    }
+} */
+@media (max-width: 414px){
     .item-sec-1 h1 {
         font-size: 50px !important;
     }
