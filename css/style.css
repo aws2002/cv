@@ -946,6 +946,7 @@ a{
     .sm-phone{
         margin: 0 !important;
         padding: 0 !important;
+        overflow-x: hidden;
     }
     .all{
         border-radius: 0;
@@ -999,6 +1000,9 @@ a{
     }
 }
 @media (max-width: 414px){
+    .item-sec-1 h1 {
+        font-size: 50px !important;
+    }
     .port.one {
         top: 20px;
     }
