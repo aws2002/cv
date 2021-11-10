@@ -955,6 +955,18 @@ a{
     .item-icon-socal{
         text-align: center;
     }
+    .sec-1{
+        margin-top: 110px;
+    }
+    .navbar{
+        
+        position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: #212122;
+    }
     .services-responsive-mobile{
         margin-top: 150px !important;
     }
@@ -962,7 +974,7 @@ a{
         bottom: -145px
     }
     .pricing{
-        margin-top: 180px !important;
+        margin-top: 150px !important;
     }
     .folio{
         margin-top: 40px;
@@ -999,12 +1011,13 @@ a{
         font-size: 50px !important;
     }
 }
-@media (min-width: 413px){
+@media (min-width: 413px) and (max-width:414){
     .item-sec-1 h1 {
         font-size: 50px !important;
     }
     .port.one {
         top: 20px;
+        left: 50px;
     }
     .port.tow {
         left: 19px;
@@ -1025,6 +1038,10 @@ a{
         top: 130px;
         left: 20px;
     }
+    .menu-btn {
+        margin: 0px 35px;
+    }
+    
 }
 @media (min-width: 768px){
     .services-responsive-mobile{
