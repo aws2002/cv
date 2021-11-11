@@ -243,16 +243,20 @@ a{
     top: 20px;
     left: 109px;
     position: relative;
+    background-color: #fff;
+    color: var(--color-3);
 }
 .port.tow{
     left: 78px;
     top: 92px;;
     position:relative;
+    background-color: var(--color-3);
 }
 .port.three{
     left:-173px;
     top: 92px;
     position:relative;
+    background-color: var(--color-3);
 }
 .flex-c{
     display: flex;
@@ -264,16 +268,21 @@ a{
     position: relative;
     top: 164px;
     left: -58px;
+    background-color: #fff;
+    color: var(--color-3);
 }
 .port.five{
     position: relative;
     top: 93px;
     left: -90px;
+    background-color: var(--color-3);
 }
 .port.sex{
     position: relative;
     top: 165px;
     left: -122px;
+    background-color: #fff;
+    color: var(--color-3);
 }
 .services-responsive-mobile,
 .services{
@@ -1109,4 +1118,18 @@ a{
 }
 .services-responsive-mobile .owl-carousel button.owl-dot.active:hover{
     opacity: 0.8;
+}
+.view {
+    display: table;
+    font-family: var(--font-2);
+    left: 35px;
+    font-size: 80px;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: -5px;
+    transform: rotate(-45deg);
+    transition: all 0.5s ease;
+    letter-spacing: 2px;
 }
