@@ -5,48 +5,48 @@ $.scrollIt({
 });
 
 
-const sr = ScrollReveal({
-    origin: 'right',
-    distance: '30px',
-    duration: 2000,
-    reset: true
-});
+// const sr = ScrollReveal({
+//     origin: 'right',
+//     distance: '30px',
+//     duration: 2000,
+//     reset: true
+// });
 
-sr.reveal(`.port,.Btn`, {
-    interval: 200
-})
+// sr.reveal(`.port,.Btn`, {
+//     interval: 200
+// })
 
-const sr3 = ScrollReveal({
-    origin: 'left',
-    distance: '30px',
-    duration: 2000,
-    reset: true
-});
+// const sr3 = ScrollReveal({
+//     origin: 'left',
+//     distance: '30px',
+//     duration: 2000,
+//     reset: true
+// });
 
-sr3.reveal(`.sec-3,.box-exp,.item-box-contact,.info-icon`, {
-    interval: 200
-})
-const sr2 = ScrollReveal({
-    origin: 'top',
-    distance: '30px',
-    duration: 2000,
-    reset: true
-});
+// sr3.reveal(`.sec-3,.box-exp,.item-box-contact,.info-icon`, {
+//     interval: 200
+// })
+// const sr2 = ScrollReveal({
+//     origin: 'top',
+//     distance: '30px',
+//     duration: 2000,
+//     reset: true
+// });
 
-sr2.reveal(`.box1,.box-pricing`, {
-    interval: 200
-})
+// sr2.reveal(`.box1,.box-pricing`, {
+//     interval: 200
+// })
 
-const sr4 = ScrollReveal({
-    origin: 'bottom',
-    distance: '30px',
-    duration: 2000,
-    reset: true
-});
+// const sr4 = ScrollReveal({
+//     origin: 'bottom',
+//     distance: '30px',
+//     duration: 2000,
+//     reset: true
+// });
 
-sr4.reveal(`.box-certificates,.titel,.item-skille,.input-form,.box-text-area,.btnForm`, {
-    interval: 200
-})
+// sr4.reveal(`.box-certificates,.titel,.item-skille,.input-form,.box-text-area,.btnForm`, {
+//     interval: 200
+// })
 
 
 
@@ -212,10 +212,10 @@ function sendmail(){
 function toggleTeme(){
             if(localStorage.getItem("shala-theme")!==null){
                 if(localStorage.getItem("shala-theme")==="dark"){
-                    $(".all").addClass("dark");
+                    $(".all,body").addClass("dark");
                 }
                 else{
-                    $(".all").removeClass("dark");
+                    $(".all,body").removeClass("dark");
                 }
             }
             updateIcon();
@@ -224,8 +224,8 @@ function toggleTeme(){
         toggleTeme();
         
         $(".toggle-theme").on("click",function(){
-            $(".all").toggleClass("dark");
-            if($(".all").hasClass("dark")){
+            $(".all,body").toggleClass("dark");
+            if($(".all,body").hasClass("dark")){
                 localStorage.setItem("shala-theme","dark");
             }
             else{
@@ -234,7 +234,7 @@ function toggleTeme(){
             updateIcon();
         })
 function updateIcon(){
-            if($(".all").hasClass("dark")){
+            if($(".all,body").hasClass("dark")){
                 $(".toggle-theme i").removeClass("fa-moon");
                 $(".toggle-theme i").addClass("fa-sun");
             }

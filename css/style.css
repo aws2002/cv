@@ -10,13 +10,53 @@
     --shadow-black-300: 0 5px 15px rgba(0, 0, 0, 0.3);
     --font-1:"Lato", sans-serif;
     --font-2:"Bebas Neue", cursive;;
+    --bg-to-dark-2:#000;
+    --bg-to-dark-2_1:#323233;
+    --bg-to-dark-2_2:#575757;
+    --color-4:#892cdc;
+    --color-5:#007aedd8;
+    --color-6:#007aedb0;
+    --color-7:#007ced;
+
+    
+}
+body.dark{
+    --color-3:#892cdc;
+
+}
+.all.dark {
+    background-color: var(--bg-to-dark-2);
+    --color-3:#892cdc;
+    --bg-to-dark-2_1:#121213ce;
+    --color-5:#6501bd;
+    --bg-to-dark-2_2:#202020;
+    --color-6:#8a2cdc77;
+}
+
+.toggle-theme {
+    height: 40px;
+    width: 40px;
+    z-index: 1200;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.toggle-theme i {
+    line-height: 40px;
+    font-size: 25px;
+}
+.toggle-theme:hover {
+    opacity: 1;
 }
 body {
     margin: 0;
     /* background: url(../images/about-courses-bg.png);
     background-repeat: no-repeat; */
     overflow-x: hidden;
-    background-color: #2b5fd2;
+    background-color: var(--color-3);
 }
 .nav-link{
     color: #aaa !important;
@@ -82,9 +122,9 @@ a{
     font-family: var(--font-2);
     font-size: 65px;
     letter-spacing: 2px;
-    background-image: linear-gradient(to top,#007ced 0%,#007aedd8 100%);
+    background-image: linear-gradient(to top,var(--color-3) 0%,var(--color-5) 100%);
     background-size: 100%;
-    text-shadow: 0 0 15px #007aeda4;
+    text-shadow: 0 0 15px var(--color-3);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -99,22 +139,22 @@ a{
 }
 
 .btn1{
-    background-color: #323233;
+    background-color: var(--bg-to-dark-2_1);
     color: #fff;
     border-radius: 25px;
     font-weight: 500;
     padding: 5px 25px;
     font-size: 18px;
-    border: 2px solid #007ced;
+    border: 2px solid var(--color-3);
     transition: all 0.5s ease;
     box-shadow: var(--shadow-black-300);
 }
 
 .btn1:hover{
-    background-color: #007ced;
+    background-color: var(--color-3);
 }
 .btn2{
-    background-color: #323233;
+    background-color: var(--bg-to-dark-2_1);
     font-weight: 500;
     border-radius: 25px;
     border: 2px solid #fff;
@@ -130,20 +170,20 @@ a{
     border-radius:30% 70% 70% 32% / 62% 46% 54% 38% ;
     width: 400px;
     height: 400px;
-    background-color: #323233;
+    background-color: var(--bg-to-dark-2_1);
     margin: auto;
-    border: 1px solid var(--color-3);
+    border: 2px solid var(--color-3);
     animation: spin_2 5s linear infinite;
     box-shadow: 0 0 15px #007aed93;
 }
 .myimg-2{
     border-radius:30% 70% 70% 32% / 62% 46% 54% 38% ;
-    background: #575757;
+    background:var(--bg-to-dark-2_2);
     width: 390px;
     height: 390px;
     animation: spin_1 15s linear infinite;
-    border: 1px solid #fff;
-    box-shadow: 0 0 15px rgba(196, 196, 196, 0.3);
+    border: 2px solid #fff;
+    box-shadow: 0 0 40px rgba(196, 196, 196, 0.3);
 }
 @keyframes spin_2{
     0%{
@@ -199,8 +239,8 @@ a{
     width: 35%;
     height: 4px;
     bottom: 0;
-    box-shadow: 0 0 15px #007ced;
-    background-color: #007ced;
+    box-shadow: 0 0 15px var(--color-3);
+    background-color: var(--color-3);
 }
 
 .item-icon-do i{
@@ -222,7 +262,7 @@ a{
     height: 100px;
     position: relative;
     display: inline-block;
-    box-shadow:  0 0 45px #007aeda4;
+    box-shadow:  0 0 45px var(--color-3);
 }
 .port-2{
     box-shadow:  0 0 45px rgba(255, 255, 255, 0.555);
@@ -293,7 +333,7 @@ a{
     z-index: 0;
     height: 280px;
     width: 335px;
-    background-color: #323233;
+    background-color: var(--bg-to-dark-2_1);
 }
 .services-responsive-mobile .box img,
 .services .box img{
@@ -341,7 +381,7 @@ a{
     font-size: 35px;
     letter-spacing: 1px;
     font-family: var(--font-2);
-    text-shadow: 0 0 5px #007ced;
+    text-shadow: 0 0 5px var(--color-3);
     
 }
 
@@ -380,7 +420,7 @@ a{
 }
 .box-pricing{
     text-align: center;
-    background-color: #353535;
+    background-color: var(--bg-to-dark-2_1);
     padding: 30px 20px;
     border-radius: 20px;
     position: relative;
@@ -493,17 +533,19 @@ a{
     border-radius: 50%;
     font-size: 20px;
     color: #000;
-    background: #007aedb0;
+    background: var(--color-4);
     position: absolute;
     left: 0;
     top: 0;
     right: -50px;
     bottom: 0;
     margin: auto;
+    opacity: 0.7;
     transition: all 0.8s ease;
 }
 
 .Hover a.details:hover {
+    opacity: 1;
     background-color: var(--color-3);
 }
 .sec-3{
@@ -526,7 +568,7 @@ a{
 }
 .top i{
     color: #fff;
-    text-shadow: 0 0 10px #007ced;
+    text-shadow: 0 0 10px var(--color-3);
     font-size: 30px;
 }
 
@@ -548,7 +590,7 @@ a{
     height: 100%;
     border-bottom: 5px solid #fff;
     border-right:5px solid var(--color-3);
-    box-shadow: 5px 5px 5px #007aedb0;
+    box-shadow: 5px 5px 5px var(--color-6);
     animation: animate_1 1.5s linear infinite;
     border-radius: 10px;
 }
@@ -587,7 +629,7 @@ a{
     font-family: var(--font-2);
     font-size: 30px;
     color: var(--color-3);
-    text-shadow: 0 0 4px #007ced;
+    text-shadow: 0 0 4px var(--color-3);
 }
 .skille{
     color: #fff;
@@ -612,11 +654,11 @@ a{
     height: 12px;
     margin-bottom: 15px;
     /* width: 100%; */
-    box-shadow: 0 0 3px #007ced;
+    box-shadow: 0 0 3px var(--color-3);
 }
 .progres2{
     position: relative;
-    background-color: #007ced;
+    background-color: var(--color-3);
     border: 2px solid #222;
     -moz-border-radius: 9px;
     -webkit-border-radius: 9px;
@@ -707,7 +749,7 @@ a{
 .box-img-certificates i{
     font-size: 45px;
     color: var(--color-3);
-    text-shadow: 0 0 5px #007ced;
+    text-shadow: 0 0 5px var(--color-3);
 }
 
 .menu-btn-burger {
@@ -727,7 +769,7 @@ a{
     background: var(--color-3);
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
-    box-shadow: 0 0 5px #007ced;
+    box-shadow: 0 0 5px var(--color-3);
 }
 .menu-btn-burger::before {
     transform: translateY(-16px);
@@ -782,19 +824,19 @@ a{
 }
 @keyframes text-animation{
     0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
-        color: #007ced;
+        color: var(--color-3);
         text-shadow: none;
     }
     18.1%,20.1%,30%,100%{
-        color: #007ced;
-        text-shadow: 0 0 5px #007ced,
-        0 0 5px #007ced;
+        color: var(--color-3);
+        text-shadow: 0 0 5px var(--color-3),
+        0 0 5px var(--color-3);
     }
 }
 .bg-super{
-    background-color: #252525;
-    border-top: 2px solid #333;
-    border-bottom: 2px solid #333;
+    background-color: var(--bg-to-dark-2_1);
+    border-top: 2px solid #444;
+    border-bottom: 2px solid #444;
 }
 .super-resume-item{
     position: relative;
@@ -855,9 +897,9 @@ a{
     background-color: #212122;
     padding: 4px 15px;
     display: inline-block;
-    border: 3px solid #007ced;
+    border: 3px solid var(--color-3);
     border-radius: 20px;
-    box-shadow: 0 0 5px #007ced;
+    box-shadow: 0 0 5px var(--color-3);
 
 }
 .item-span-exp span{
@@ -894,7 +936,7 @@ a{
 .info-icon i{
     color:var(--color-3);
     font-size:40px;
-    text-shadow: 0 0 5px #007ced;
+    text-shadow: 0 0 5px var(--color-3);
 }
 .contact{
     color:#fff;
@@ -977,7 +1019,7 @@ a{
         right: 0;
         left: 0;
         z-index: 1030;
-        background-color: #212122;
+        background-color: var(--main-color);
 }
     .services-responsive-mobile{
         margin-top: 150px !important;
@@ -1120,7 +1162,7 @@ a{
     background: var(--color-3);
     width: 40px;
     transition: all 0.5s ease;
-    box-shadow: 0 0 5px #007ced;
+    box-shadow: 0 0 5px var(--color-3);
 }
 .services-responsive-mobile .owl-carousel button.owl-dot.active:hover{
     opacity: 0.8;
@@ -1231,25 +1273,3 @@ a{
     font-family: var(--font-2);
 }
 
-.all.dark {
-    background-color: #fff;
-}
-
-.toggle-theme {
-    height: 40px;
-    width: 40px;
-    z-index: 1200;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 16px;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.5s ease;
-}
-.toggle-theme i {
-    line-height: 40px;
-    font-size: 25px;
-}
-.toggle-theme:hover {
-    opacity: 1;
-}
