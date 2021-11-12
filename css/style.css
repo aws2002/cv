@@ -1064,7 +1064,13 @@ a{
     /* .menu-btn {
         margin: 0px 100px;
     } */
-    
+    .viewBtn {
+        top: -9px!important;
+        left: 0px!important;
+    }
+    .pricing {
+        margin-top: 115px!important;
+    }
 }
 @media (min-width: 768px){
     .services-responsive-mobile{
