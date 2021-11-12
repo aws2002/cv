@@ -12,7 +12,7 @@ const sr = ScrollReveal({
     reset: true
 });
 
-sr.reveal(`.port`, {
+sr.reveal(`.port,.Btn`, {
     interval: 200
 })
 
