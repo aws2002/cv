@@ -207,3 +207,39 @@ function sendmail(){
 				}
 			);
 		}
+
+
+function toggleTeme(){
+            if(localStorage.getItem("shala-theme")!==null){
+                if(localStorage.getItem("shala-theme")==="dark"){
+                    $(".all").addClass("dark");
+                }
+                else{
+                    $(".all").removeClass("dark");
+                }
+            }
+            updateIcon();
+        }
+        
+        toggleTeme();
+        
+        $(".toggle-theme").on("click",function(){
+            $(".all").toggleClass("dark");
+            if($(".all").hasClass("dark")){
+                localStorage.setItem("shala-theme","dark");
+            }
+            else{
+                localStorage.setItem("shala-theme","light");
+            }
+            updateIcon();
+        })
+function updateIcon(){
+            if($(".all").hasClass("dark")){
+                $(".toggle-theme i").removeClass("fa-moon");
+                $(".toggle-theme i").addClass("fa-sun");
+            }
+            else{
+                $(".toggle-theme i").removeClass("fa-sun");
+                $(".toggle-theme i").addClass("fa-moon");
+            }
+}        
