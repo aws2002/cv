@@ -114,38 +114,40 @@
                                     <div class="titel">
                                         <h5>How Can I Help You?</h5>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-6 ">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="input-form">
-                                                        <input type="text" class="form-control" placeholder="Full Name">
+                                    <form action="javascript:sendmail()" method="post">
+                                        <div class="row">
+                                            <div class="col-md-6 ">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="input-form">
+                                                            <input type="text" class="form-control" name="Name" placeholder="Full Name" id="Name">
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-md-12 mt-3">
-                                                    <div class="input-form">
-                                                        <input type="text" class="form-control" placeholder="Email Address">
+                                                    <div class="col-md-12 mt-3">
+                                                        <div class="input-form">
+                                                            <input type="text" class="form-control" name="Sender" placeholder="Email Address" id="Sender">
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-md-12 mt-3 mb-3">
-                                                    <div class="input-form">
-                                                        <input type="text" class="form-control" placeholder="Subject">
+                                                    <div class="col-md-12 mt-3 mb-3">
+                                                        <div class="input-form">
+                                                            <input  type="text" class="form-control" name="Subject" placeholder="Subject" id="Subject">
+                                                        </div>
                                                     </div>
+                                                    
                                                 </div>
-                                                
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="box-text-area">
+                                                    <textarea name="Message" id=""  class="form-control" placeholder="Message" id="Message"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mt-3 mb-3">
+                                                <div class="input-form">
+                                                    <button type="submit" class="btn1 bnt btnForm">Send message</button>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="box-text-area">
-                                                <textarea name="" id=""  class="form-control" placeholder="Message"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 mt-3 mb-3">
-                                            <div class="input-form">
-                                                <a href="" class="btn1 bnt btnForm">Send message</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -189,7 +191,6 @@
         <div class="perloder1">
             <div class="perloder2">
                 <div class="perloder3">
-
                 </div>
             </div>
         </div>
@@ -206,24 +207,8 @@
     <script src="js/scrollreveal.min.js"></script>
     <script src="js/scrollIt.min.js"></script>
     <script src="js/main.js"></script>
-    <script>
-
-
-        const phrases = ['Web Designer', 'Frontend Developer', 'Backend Programming'];
-        const el = document.querySelector('.text');
-        const fx = new TextScramble(el);
-        let counter = 0;
-
-        const next = () => {
-            fx.setText(phrases[counter]).then(() => {
-                setTimeout(next, 2500);
-            });
-            counter = (counter + 1) % phrases.length;
-        };
-
-        next();
-    </script>
-
+    <script src="js/smtp.js"></script>
+    
 </body>
 
 </html>

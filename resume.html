@@ -409,23 +409,7 @@
     <script src="js/scrollreveal.min.js"></script>
     <script src="js/scrollIt.min.js"></script>
     <script src="js/main.js"></script>
-    <script>
-
-
-        const phrases = ['Web Designer', 'Frontend Developer', 'Backend Programming'];
-        const el = document.querySelector('.text');
-        const fx = new TextScramble(el);
-        let counter = 0;
-
-        const next = () => {
-            fx.setText(phrases[counter]).then(() => {
-                setTimeout(next, 2500);
-            });
-            counter = (counter + 1) % phrases.length;
-        };
-
-        next();
-    </script>
+    <script src="js/smtp.js"></script>
 
 </body>
 
