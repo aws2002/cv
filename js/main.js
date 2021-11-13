@@ -235,11 +235,11 @@ function toggleTeme(){
         })
 function updateIcon(){
             if($(".all,body").hasClass("dark")){
-                $(".toggle-theme i").removeClass("fa-moon");
-                $(".toggle-theme i").addClass("fa-sun");
+                $(".toggle-theme i").removeClass("them-1");
+                $(".toggle-theme i").addClass("them-1");
             }
             else{
-                $(".toggle-theme i").removeClass("fa-sun");
-                $(".toggle-theme i").addClass("fa-moon");
+                $(".toggle-theme i").removeClass("them-1");
+                $(".toggle-theme i").addClass("them-1");
             }
 }        
