@@ -993,8 +993,7 @@ a{
 
 @media (max-width: 767px){
     .sec-6{
-        
-        margin: 150px 0 30px !important;
+        margin: 150px 0 0 !important;
     }
     .footer{
         border-radius: 0;
