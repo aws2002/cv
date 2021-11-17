@@ -44,7 +44,7 @@ const sr4 = ScrollReveal({
     reset: true
 });
 
-sr4.reveal(`.box-certificates,.titel,.item-skille,.input-form,.box-text-area,.btnForm`, {
+sr4.reveal(`.box-certificates,.titel,.item-skille,.input-form,.box-text-area,.btnForm,.sec-6`, {
     interval: 200
 })
 
@@ -243,3 +243,21 @@ function updateIcon(){
                 $(".toggle-theme i").addClass("them-1");
             }
 }        
+
+$('.sec-6-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    autoplay:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:2,
+        },
+        600:{
+            items:3,
+        },
+        1000:{
+            items:7,
+        }
+    }
+});

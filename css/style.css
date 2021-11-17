@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
 
 :root{
     --main-color:#212122;
@@ -9,7 +10,8 @@
     --shadow-black-100: 0 5px 15px rgba(0, 0, 0, 0.1);
     --shadow-black-300: 0 5px 15px rgba(0, 0, 0, 0.3);
     --font-1:"Lato", sans-serif;
-    --font-2:"Bebas Neue", cursive;;
+    --font-2:"Bebas Neue", cursive;
+    --font-3:'Gugi', cursive;
     --bg-to-dark-2:#000;
     --bg-to-dark-2_1:#323233;
     --bg-to-dark-2_2:#575757;
@@ -119,16 +121,18 @@ a{
     font-family: var(--font-1);
 } */
 .item-sec-1 h1{
-    font-family: var(--font-2);
+    font-family: var(--font-3);
     font-size: 65px;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     background-image: linear-gradient(to top,var(--color-3) 0%,var(--color-5) 100%);
     background-size: 100%;
-    text-shadow: 0 0 15px var(--color-3);
+    /* text-shadow: 0 0 12px var(--color-3); */
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    font-weight: 700;
+    animation: text-animation 7s linear infinite;
 }
 .text{
     font-size: 17px;
@@ -830,8 +834,7 @@ a{
     }
     18.1%,20.1%,30%,100%{
         color: var(--color-3);
-        text-shadow: 0 0 5px var(--color-3),
-        0 0 5px var(--color-3);
+        text-shadow: 0 0 10px var(--color-3);
     }
 }
 .bg-super{
@@ -989,6 +992,10 @@ a{
 
 
 @media (max-width: 767px){
+    .sec-6{
+        
+        margin: 150px 0 30px !important;
+    }
     .footer{
         border-radius: 0;
     }
@@ -1030,7 +1037,7 @@ a{
         bottom: -145px
     }
     .pricing{
-        margin-top: 220px !important;
+        margin-top: 50px !important;
     }
     .viewBtn {
         top:96px !important;
@@ -1282,4 +1289,11 @@ a{
     border-radius: 20px;
     background-image: linear-gradient(to top,var(--color-3) 50%,var(--color-5) 100%);
     
+}
+
+.item-icon-lang-prog img {
+    width: 70px !important;
+}
+.sec-6{
+    color: #fff;
 }
