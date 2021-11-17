@@ -122,8 +122,8 @@ a{
 } */
 .item-sec-1 h1{
     font-family: var(--font-3);
-    font-size: 65px;
-    letter-spacing: 4px;
+    font-size: 60px;
+    letter-spacing: 2px;
     background-image: linear-gradient(to top,var(--color-3) 0%,var(--color-5) 100%);
     background-size: 100%;
     /* text-shadow: 0 0 12px var(--color-3); */
