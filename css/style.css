@@ -708,7 +708,7 @@ a{
 }
 #Js{
     animation: Js-fill 2.5s forwards;
-    animation-delay:3s;
+    animation-delay:3s; 
 }
 @keyframes Js-fill {
     100%{
@@ -718,7 +718,6 @@ a{
         width: 85%;
     }
 }
-
 .certificates{
     color:#fff;
 }
