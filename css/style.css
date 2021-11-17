@@ -680,10 +680,12 @@ a{
 }
 #css{
     animation: css-fill 2s forwards;
+    animation-delay:3s;
 }
 @keyframes css-fill{
     100%{
         width: 100%;
+        
     }
     60%{
         width: 95%;
@@ -691,6 +693,7 @@ a{
 }
 #php{
     animation: php-fill 3s forwards ;
+    animation-delay:3s;
 }
 
 @keyframes php-fill{
@@ -705,6 +708,7 @@ a{
 }
 #Js{
     animation: Js-fill 2.5s forwards;
+    animation-delay:3s;
 }
 @keyframes Js-fill {
     100%{
@@ -1119,7 +1123,7 @@ a{
         left: 0px!important;
     }
     .pricing {
-        margin-top: 115px!important;
+        margin-top: 80px!important;
     }
 }
 @media (min-width: 768px){
