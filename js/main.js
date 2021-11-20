@@ -5,48 +5,48 @@ $.scrollIt({
 });
 
 
-const sr = ScrollReveal({
-    origin: 'right',
-    distance: '30px',
-    duration: 2000,
-    reset: true
-});
+// const sr = ScrollReveal({
+//     origin: 'right',
+//     distance: '30px',
+//     duration: 2000,
+//     reset: true
+// });
 
-sr.reveal(`.port,.Btn`, {
-    interval: 200
-})
+// sr.reveal(`.port,.Btn`, {
+//     interval: 200
+// })
 
-const sr3 = ScrollReveal({
-    origin: 'left',
-    distance: '30px',
-    duration: 2000,
-    reset: true
-});
+// const sr3 = ScrollReveal({
+//     origin: 'left',
+//     distance: '30px',
+//     duration: 2000,
+//     reset: true
+// });
 
-sr3.reveal(`.sec-3,.box-exp,.item-box-contact,.info-icon`, {
-    interval: 200
-})
-const sr2 = ScrollReveal({
-    origin: 'top',
-    distance: '30px',
-    duration: 2000,
-    reset: true
-});
+// sr3.reveal(`.sec-3,.box-exp,.item-box-contact,.info-icon`, {
+//     interval: 200
+// })
+// const sr2 = ScrollReveal({
+//     origin: 'top',
+//     distance: '30px',
+//     duration: 2000,
+//     reset: true
+// });
 
-sr2.reveal(`.box1,.box-pricing`, {
-    interval: 200
-})
+// sr2.reveal(`.box1,.box-pricing`, {
+//     interval: 200
+// })
 
-const sr4 = ScrollReveal({
-    origin: 'bottom',
-    distance: '30px',
-    duration: 2000,
-    reset: true
-});
+// const sr4 = ScrollReveal({
+//     origin: 'bottom',
+//     distance: '30px',
+//     duration: 2000,
+//     reset: true
+// });
 
-sr4.reveal(`.box-certificates,.titel,.item-skille,.input-form,.box-text-area,.btnForm,.sec-6`, {
-    interval: 200
-})
+// sr4.reveal(`.box-certificates,.titel,.item-skille,.input-form,.box-text-area,.btnForm,.sec-6`, {
+//     interval: 200
+// })
 
 
 
