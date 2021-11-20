@@ -1360,7 +1360,7 @@ a{
     line-height: 26px;
     color: #fff;
 }
-.show{
+.faq .show{
     background-color: var(--bg-to-dark-2_1);
 }
 .faq{
