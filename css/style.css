@@ -1367,3 +1367,85 @@ a{
 .faq{
     color: #fff;
 }
+
+.project-area .button-group ul{
+    list-style: none;
+}
+.project-area .button-group ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+.text-end{
+    text-align: end;
+}
+.btn-selectd{
+    background: none;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.our-project{
+    background: var(--bg-to-dark-2_1);
+    color: #fff;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+.our-project:hover .img-project img{
+    filter: grayscale(0);
+    
+}
+.our-project .img-project img{
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+}
+.our-project .img-project{
+    border-radius: 5px;
+    
+}
+.sec-1-info-pro h4{
+    font-size: 25px;
+    
+    margin-top: 25px;
+    font-family: var(--font-2);
+}
+.sec-1-info-pro p{
+    font-size: 14px;
+    color: rgb(90 90 90);
+    font-weight: 500;
+}
+.sec-1-info-pro ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+}
+.sec-1-info-pro li{
+    display: inline-block;
+    margin: 0 5px 8px 0;
+    border-radius: 20px;
+    padding: 5px 15px;
+    border: 2px solid var(--color-3);
+}
+
+.gruop-btn-box{
+    position: relative;
+    top: 173px;
+}
+.btn-1-pro{
+    background-color: var(--color-3);
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    width: 100px;
+}
+.btn-2-pro{
+    width: 100px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 2px solid #fff;
+}
+.img-project{
+    overflow: hidden;
+    width: 100%;
+}
